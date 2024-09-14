@@ -14,6 +14,7 @@
     "medusa"
   ],
   "scripts": {
+    "postinstall": "npm install --omit=dev",
     "build": "medusa build",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "seed:once": "node script/seedOnce.js",
