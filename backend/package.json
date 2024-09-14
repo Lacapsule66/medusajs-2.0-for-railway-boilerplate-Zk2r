@@ -13,14 +13,14 @@
     "headless",
     "medusa"
   ],
-  "scripts": {
-    "postinstall": "npm install --omit=dev",
-    "build": "medusa build",
-    "seed": "medusa exec ./src/scripts/seed.ts",
-    "seed:once": "node script/seedOnce.js",
-    "start": "medusa start",
-    "dev": "medusa develop"
-  },
+"scripts": {
+  "prebuild": "npm install --omit=dev",
+  "build": "medusa build",
+  "seed": "medusa exec ./src/scripts/seed.ts",
+  "seed:once": "node script/seedOnce.js",
+  "start": "medusa start",
+  "dev": "medusa develop"
+},
   "dependencies": {
     "@medusajs/api-key": "preview",
     "@medusajs/auth": "preview",
