@@ -14,8 +14,7 @@
     "medusa"
   ],
 "scripts": {
-  "prebuild": "npm install --omit=dev",
-  "build": "medusa build",
+  "build": "npm install --omit=dev && medusa build",
   "seed": "medusa exec ./src/scripts/seed.ts",
   "seed:once": "node script/seedOnce.js",
   "start": "medusa start",
